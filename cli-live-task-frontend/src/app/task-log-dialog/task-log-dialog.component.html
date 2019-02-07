@@ -1,0 +1,44 @@
+<h2 mat-dialog-title>Task</h2>
+
+<mat-dialog-content [formGroup]="form">
+  
+    <div>
+      <mat-form-field class="full-width">
+          <input matInput
+                  placeholder="Task Name"
+                formControlName="name">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field class="full-width">
+          <input matInput
+                  placeholder="Task Description"
+                formControlName="description">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field class="full-width">
+          <input matInput
+                  placeholder="Command"
+                formControlName="command">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field class="full-width" >
+          <textarea matInput
+                  placeholder="Log"
+                formControlName="log"
+                rows="15">
+          </textarea>
+      </mat-form-field>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button class="mat-raised-button"(click)="close()">Close</button>
+</mat-dialog-actions>
+

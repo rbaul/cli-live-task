@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id "com.moowork.node" version "1.2.0"
+}
+
+node {
+    version = '10.15.0'
+    npmVersion = '6.4.1'
+    download = true
+}
+
+jar.dependsOn 'npm_run_build'
+
+jar {
+    from 'spring-boot-web-socket-frontend' into 'static'
+}

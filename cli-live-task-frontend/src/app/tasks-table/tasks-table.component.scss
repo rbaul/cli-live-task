@@ -1,0 +1,22 @@
+.full-width-table {
+  width: 100%;
+}
+
+#add-button {
+  right: 20px;
+  bottom: 30px;
+  position: fixed;
+}
+
+tr.mat-row:hover {
+  background-color: #b1b8dc;
+  cursor: pointer;
+}
+
+.fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+

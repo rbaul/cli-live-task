@@ -1,0 +1,4 @@
+rootProject.name = 'cli-live-task'
+include 'cli-live-task-backend'
+include 'cli-live-task-frontend'
+

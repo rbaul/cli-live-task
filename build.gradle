@@ -1,0 +1,5 @@
+allprojects {
+	group = 'com.github.rbaul'
+	version = '0.0.1-SNAPSHOT'
+}
+
